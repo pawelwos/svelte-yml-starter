@@ -1,0 +1,11 @@
+slug: home
+title: Home
+description: ''
+SEO_title: SvelteKit YAML Starter
+SEO_desc: SvelteKit YAML Starter with dynamic / flexible sections
+url: /
+sections:
+  - type: simple
+    content: |
+      <h2>Welcome!</h2>
+      <p>This is an example of the same approach as my <a href="https://gatsbyymlstartermain.gatsbyjs.io/">Gatsby YAML Starter</a> but this time using <a href="">SvelteKit</a> which in my opinion is a lot faster than Gatsby. Obviously it is missing the wonderful Gatsby Image optimisation, but I can sacrifice it for the overall speed and convert my images using node or some other solution.</p>

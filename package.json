@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.37"
+		"@sveltejs/adapter-static": "^1.0.0-next.37",
+		"js-yaml": "^4.1.0"
 	}
 }
