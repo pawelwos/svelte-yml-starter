@@ -1,0 +1,15 @@
+slug: second-page
+title: Second page
+url: /second-page
+sections:
+  -
+    type: header
+    title: "Second Page"
+    bgimg: https://unsplash.com/photos/XJXWbfSo2f0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzV8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI5MzQyMQ&force=true&w=1920
+  -
+    type: 'simple'
+    content: |
+      <h1>Example page content</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam accusamus dolore saepe, dolores atque doloremque alias exercitationem reprehenderit quis tenetur laborum adipisci voluptatibus voluptatem nostrum? Ipsum eveniet eum architecto neque alias illum commodi velit minus itaque sint quae necessitatibus facilis, dolore facere cupiditate, voluptates quibusdam dolor perspiciatis, in dignissimos numquam?</p>
+      <div class="mb-4"><img src="/images/image01.jpg" loading="lazy" alt="Img" /></div>
+      <p><a href="/">&lt; Back to Homepage</a></p>

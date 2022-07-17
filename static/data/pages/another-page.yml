@@ -1,0 +1,15 @@
+slug: another-page
+title: Another page
+url: /another-page
+sections: 
+  -
+    type: header
+    title: "Another Page"
+    bgimg: https://unsplash.com/photos/n8Qb1ZAkK88/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzN8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI5MzQyMQ&force=true&w=1920
+  -
+    type: 'simple'
+    content: |
+      <h1>Example page content</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam accusamus dolore saepe, dolores atque doloremque alias exercitationem reprehenderit quis tenetur laborum adipisci voluptatibus voluptatem nostrum? Ipsum eveniet eum architecto neque alias illum commodi velit minus itaque sint quae necessitatibus facilis, dolore facere cupiditate, voluptates quibusdam dolor perspiciatis, in dignissimos numquam?</p>
+      <div class="mb-4"><img src="/images/image01.jpg" alt="Img" loading="lazy" /></div>
+      <p><a href="/">&lt; Back to Homepage</a></p>

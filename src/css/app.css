@@ -3,9 +3,22 @@
 @tailwind utilities;
 
 @layer components {
-    section.simple {
+    section.simple,
+    section.blog-list {
+        h1,h2,h3,h4,h5,h6,h7 {
+            @apply font-bold mb-4 text-blue-800
+        }
+        h1 {
+          @apply text-3xl lg:text-4xl
+        }
         h2 {
-            @apply text-2xl lg:text-3xl font-bold mb-4 text-blue-800
+          @apply text-2xl lg:text-3xl
+        }
+        p {
+          @apply mb-4
+        }
+        a {
+          @apply underline text-blue-800
         }
     }
 }
