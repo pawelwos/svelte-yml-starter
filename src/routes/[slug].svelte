@@ -1,11 +1,11 @@
 <script context="module">
   import yaml from "js-yaml"
-
-  export const load = async ({fetch}) => {
-    const res = await fetch('/data/pages/home.yml')
+  
+  export const load = async ({fetch, params}) => {
+    const res = await fetch('/data/pages/'+params.slug+'.yml')
     const yml = await res.text()
-
     const page = yaml.load(yml)
+
     return {
       props: {
         page
@@ -15,10 +15,10 @@
 </script>
 
 <script>
-	// Import array of defined sections needed for if statment below
-	import Sections from '../sections/Sections.js'
+  import Sections from '../sections/Sections.js'
   export let page
 </script>
+
 
 {#each page.sections as section, index}
   {#if Sections[section.type]}

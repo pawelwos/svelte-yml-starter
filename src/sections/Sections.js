@@ -1,4 +1,4 @@
 const Sections = {
-  'simple': 'Simple',
+    'simple': 'Simple',
 }
 export default Sections

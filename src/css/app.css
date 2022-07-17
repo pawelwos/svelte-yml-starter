@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    section.simple {
+        h2 {
+            @apply text-2xl lg:text-3xl font-bold mb-4 text-blue-800
+        }
+    }
+}
