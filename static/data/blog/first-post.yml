@@ -4,3 +4,10 @@
   date: '2022-02-16'
   url: /blog/first-post
   thumbnail: https://unsplash.com/photos/m_HRfLhgABo/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920
+  sections:
+    -
+      type: simple
+      content: |
+        <h2>First post</h2>
+        <p>Blog content here... </p>
+        <p><a href="/">&lt; Back to Homepage</a></p>

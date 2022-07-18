@@ -1,7 +1,13 @@
 <script>
+  import { onMount } from 'svelte';
+
   export let section
   export let posts = []
-  console.log(section)
+
+	onMount(async () => {
+		const res = await fetch(`/api/posts.json`);
+		posts = await res.json();
+	});
 </script>
 
 <section class="blog-list">

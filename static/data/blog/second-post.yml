@@ -4,3 +4,10 @@
   date: '2022-02-17'
   url: /blog/second-post
   thumbnail: https://unsplash.com/photos/hGV2TfOh0ns/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjQ1MjQwNjY0&force=true&w=1920
+  sections:
+    -
+      type: simple
+      content: |
+        <h2>Second post</h2>
+        <p>Blog content here... </p>
+        <p><a href="/">&lt; Back to Homepage</a></p>
