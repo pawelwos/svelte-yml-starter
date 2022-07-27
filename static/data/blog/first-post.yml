@@ -9,5 +9,6 @@
       type: simple
       content: |
         <h2>First post</h2>
-        <p>Blog content here... </p>
+        <p>This is simple content with inline text and images.</p>
+        <p><img src="https://unsplash.com/photos/Bd7gNnWJBkU/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQ1MTMyMDEz&force=true&w=1920" alt="Image" /></p>
         <p><a href="/">&lt; Back to Homepage</a></p>

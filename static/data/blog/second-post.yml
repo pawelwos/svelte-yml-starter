@@ -6,8 +6,79 @@
   thumbnail: https://unsplash.com/photos/hGV2TfOh0ns/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjQ1MjQwNjY0&force=true&w=1920
   sections:
     -
-      type: simple
+      type: header
+      title: "Dynamic sections / blocks"
+      bgimg: https://unsplash.com/photos/p0j-mE6mGo4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzF8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI5MzQyMQ&force=true&w=1920
+    -
+      type: twocols
+      bgcolor: '#fefefe'
       content: |
-        <h2>Second post</h2>
-        <p>Blog content here... </p>
-        <p><a href="/">&lt; Back to Homepage</a></p>
+        <h2>This is two columns section block</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas, laborum totam earum deserunt? Molestiae esse nemo recusandae aut dolores, quibusdam neque officiis hic eaque cumque consequatur minus officia in animi est labore enim natus qui!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas, laborum totam earum deserunt? Molestiae esse nemo recusandae aut dolores, quibusdam neque officiis hic eaque cumque consequatur minus officia in animi est labore enim natus qui!</p>
+      image: https://unsplash.com/photos/WiONHd_zYI4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjQ1MDc2NjE2&force=true&w=1920
+      imageAlt: 'Two Columns'
+      imagePosition: 'right'
+    -
+      type: 'features'
+      features:
+        -
+          title: Feature 1
+          image: https://unsplash.com/photos/WkfDrhxDMC8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTR8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920
+          intro: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas.
+          link: 'https://www.pawelwos.com'
+        -
+          title: Feature 2
+          image: https://unsplash.com/photos/bJjsKbToY34/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTh8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920
+          intro: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas.
+          link: 'https://www.pawelwos.com'
+        -
+          title: Feature 3
+          image: https://unsplash.com/photos/Pmh0UoG1vlE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTd8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920
+          intro: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas.
+          link: 'https://www.pawelwos.com'
+        -
+          title: Feature 4
+          image: https://unsplash.com/photos/gySMaocSdqs/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjB8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920
+          intro: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas.
+          link: 'https://www.pawelwos.com'
+    -
+      type: twocols
+      bgcolor: '#6b21a8'
+      textColor: white
+      content: |
+        <h2>This is two columns section block</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas, laborum totam earum deserunt? Molestiae esse nemo recusandae aut dolores, quibusdam neque officiis hic eaque cumque consequatur minus officia in animi est labore enim natus qui!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo harum quidem dicta officia ea neque ex dolorum tempora expedita facilis veritatis eum ipsum voluptas, laborum totam earum deserunt? Molestiae esse nemo recusandae aut dolores, quibusdam neque officiis hic eaque cumque consequatur minus officia in animi est labore enim natus qui!</p>
+      image: https://unsplash.com/photos/bsy0-z5RTfk/download?ixid=MnwxMjA3fDF8MXxzZWFyY2h8OHx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjQ1MDc2NjE2&force=true&w=1920
+      imageAlt: 'Two Columns'
+      imagePosition: 'left'
+    -
+      type: blog-list
+      intro: |
+        <h2>A blog list within a post</h2>
+    -
+      type: 'simple'
+      content: |
+        <div class="text-center">
+        <h2>As many sections as you like...</h2>
+        <p>At the moment we have 5 sections defined in <strong>/src/sections/Sections.svelte</strong></p>
+        <ul class="list-disc list-inside">
+        <li>Header</li>
+        <li>Simple</li>
+        <li>Two Columns</li>
+        <li>Blog List</li>
+        <li>Features</li>
+        </ul>
+        <p>But it is really easy to define more with its own functionality, forms and so on...</p>
+        </div>
+    -
+      type: 'simple'
+      bgcolor: "#efefef"
+      bgimg: "https://unsplash.com/photos/Pmh0UoG1vlE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTd8fGNvbXB1dGVyfGVufDB8fHx8MTY0NTI0MDY2NA&force=true&w=1920"
+      textColor: 'white'
+      content: |
+        <div class="text-center text-white">
+        <h2>A simple section with back to blog button</h2>
+        <p><a href="/" class="underline">Back to the Blog</a></p>
+        </div>

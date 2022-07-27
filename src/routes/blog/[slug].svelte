@@ -1,5 +1,6 @@
 <script context="module">
   import yaml from "js-yaml"
+  import { Sections } from '../../sections/Sections.svelte' 
   
   export const load = async ({fetch, params}) => {
     const res = await fetch('/data/blog/'+params.slug+'.yml')
@@ -15,17 +16,8 @@
 </script>
 
 <script>
-  import Sections from '../../sections/Sections.js'
+  import SectionsLoop from '../../components/Sections.svelte'
   export let page
 </script>
 
-
-{#each page.sections as section, index}
-  {#if Sections[section.type]}
-    {#await import(`../../sections/${Sections[section.type]}.svelte`) then Module}
-      <Module.default id={`section_${index}`} section={section} page={page} />
-    {/await}
-  {:else}
-     <p>{section.type} component deosn't exist</p>
-  {/if}
-{/each}
+<SectionsLoop page={page} Sections={Sections} />
