@@ -7,8 +7,8 @@
 		<h1 class="text-white text-2xl font-bold"><a href="/">SvelteKit YAML Starter</a></h1>
 	</div>
   <div class="py-4 md:flex justify-center text-white space-x-4">
-    <a href="/second-page" sveltekit:prefetch>Second Page</a>
-    <a href="/another-page" sveltekit:prefetch>Another Page</a>
+    <a href="/second-page" data-sveltekit-prefetch>Second Page</a>
+    <a href="/another-page" data-sveltekit-prefetch>Another Page</a>
   </div>
 </header>
 <div class="p-8">

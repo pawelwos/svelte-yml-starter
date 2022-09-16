@@ -1,26 +1,7 @@
-<script context="module">
-  import yaml from "js-yaml"
-  import { Sections } from '../../sections/Sections.svelte' 
-  
-  export const load = async ({fetch, params}) => {
-    const res = await fetch('/data/blog/'+params.slug+'.yml')
-    const yml = await res.text()
-    const page = yaml.load(yml)
-    const bloglist = await fetch(`/api/posts.json`).then(res => res.json())
-
-    return {
-      props: {
-        page,
-        bloglist
-      }
-    }
-  }
-</script>
-
 <script>
-  import SectionsLoop from '../../components/Sections.svelte'
-  export let page
-  export let bloglist
+  import SectionsLoop from '$lib/components/Sections.svelte'
+  export let data
+  let {bloglist, page, Sections} = data
 </script>
 
 <SectionsLoop page={page} Sections={Sections} bloglist={bloglist} />
